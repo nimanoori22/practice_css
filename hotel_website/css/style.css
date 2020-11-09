@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    line-height: 1.7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    text-decoration: none;
+}
+
+/* the nav */
+
+#myhead .thenav {
+    background: #333;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+#myhead .thenav .nav-container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+#myhead .thenav .nav-title {
+    float: left;
+}
+
+#myhead .thenav .nav-items .nav-item a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    
+}
+
+#myhead .thenav .nav-items {
+    float: right;
+}
+
+#myhead .thenav .nav-items .nav-item {
+    float: left;
+    display: block;
+}
+
+#myhead .thenav .nav-items .nav-item a:hover {
+    background: #444;
+    color: #f7c08a;
+}
+
+#myhead .thenav .nav-container .nav-title {
+    margin-top: 20px;
+    color: #fff;
+}
