@@ -132,3 +132,46 @@ ul {
     line-height: 1.8em;
 }
 
+/* mid section */
+
+#mid {
+    height: 400px;
+}
+
+#mid .left-pic {
+    float: left;
+    background: url(../img/photo-1.jpg) no-repeat;
+    width: 50%;
+    min-height: 100%;
+}
+
+#mid .right-text {
+    float: right;
+    min-height: 100%;
+    width: 50%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#mid .right-text h3 {
+    margin-top: 45px;
+    font-size: 1.5em;
+}
+
+#mid .right-text p {
+    margin: 30px;
+}
+
+#mid .right-text a {
+    margin-top: 10px;
+}
+
+#mid .right-text .btn.btn-white {
+    background: #fff;
+    color: #333;
+}
+
+#mid .right-text .btn.btn-white:hover {
+    background: #f7c08a;
+}
