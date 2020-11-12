@@ -27,6 +27,11 @@ ul {
     overflow: auto;
 }
 
+
+.clr {
+    clear: both;
+}
+
 .btn {
     display: inline-block;
     margin: 0 auto;
@@ -174,4 +179,40 @@ ul {
 
 #mid .right-text .btn.btn-white:hover {
     background: #f7c08a;
+}
+
+/* buttom */
+
+.box {
+    width: 33.3%;
+    display: inline;
+    float: left;
+    background: #fff;
+    height: 300px;
+    text-align: center;
+    padding: 40px;
+}
+
+.box h3 {
+    padding: 20px 0;
+}
+
+.box.primary-bg {
+    background: #f7c08a;
+}
+
+
+
+/* footer */
+
+#footer {
+    width: 100%;
+    height: 90px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#footer p {
+    padding-top: 30px;
 }
