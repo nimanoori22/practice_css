@@ -195,5 +195,14 @@ nav {
 
 .solutions .solution h3 {
     font-size: 40px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.solutions .solution a {
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 15px;
 }
 
