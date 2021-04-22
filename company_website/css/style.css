@@ -10,7 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #fff;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 a {
@@ -42,6 +42,7 @@ img {
     background: url(../image/home/showcase.jpg) no-repeat center center/cover;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 #head::before {
@@ -51,6 +52,12 @@ img {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#head .flexbox h1.logo {
+    font-weight: 400;
 }
 
 
@@ -65,6 +72,13 @@ nav {
     opacity: 0.7;
     padding: 12px 20px;
     color: #fff;
+    transition: 0.5s;
+    position: relative;
+    z-index: 3;
+}
+
+nav.top {
+    background: transparent;
 }
 
 .flexbox ul {
@@ -96,15 +110,15 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100%;
+    height: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-.up {
-    z-index: 1;
-}
-
-.space_between {
-    padding: 100px 0;
+.intro p {
+    padding: 20px;
 }
 
 .intro h1 {
@@ -112,10 +126,75 @@ nav {
 }
 
 .intro p {
-    font-weight: bold;
+    font-size: 23px;
 }
 
 .intro a {
     color: #fff;
+}
+
+/* ----------------------- about ---------------------- */
+
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-item i {
+    padding: 20px 0;
+    color: #fff;
+}
+
+.about-item i::before {
+    background: #28a745;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+}
+
+
+/* ------------------- solutions ------------------- */
+
+
+.solutions {
+    display: flex;
+}
+
+.solutions > div {
+    width: 50%;
+    flex: 1;
+}
+
+.solutions > div img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.solutions .solution {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.solutions .solution h3 {
+    font-size: 40px;
 }
 
