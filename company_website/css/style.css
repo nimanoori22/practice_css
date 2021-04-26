@@ -140,7 +140,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: 50px 20px;
+    padding: 30px;
 }
 
 .about-item {
@@ -149,6 +149,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 20px;
 }
 
 .about-item i {
@@ -174,17 +175,17 @@ nav {
 
 .solutions > div {
     width: 50%;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .solutions > div img {
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .solutions .solution {
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -206,3 +207,207 @@ nav {
     margin: 15px;
 }
 
+
+/* ---------- cases ------ */
+
+#cases {
+    padding: 20px 20px 40px;
+}
+
+.case-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+
+#cases p:first-of-type {
+    font-weight: bold;
+}
+
+#cases h3 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.image {
+    flex: 25%;
+    max-width: 25%;
+}
+
+/* #cases .images .image {
+    height: 100px;
+    width: 100px;
+}
+*/
+#cases .images .image img {
+    width: 100%;
+    /* vertical-align: middle; */
+    padding: 0 4px;
+}
+
+/* ------------ blog ---------- */
+
+.column .mytext {
+    width: 50%;
+    background: #0284d0;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.column .myimg {
+    width: 50%;
+}
+
+.column .myimg img {
+    height: 100%;
+}
+
+.column h3 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.column a {
+    margin: 10px 0;
+}
+
+
+/*-------- team ------------*/
+
+#team .column-1 .column img {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#team p {
+    text-align: center;
+}
+
+
+/* ------- contact ------- */
+
+#contact img {
+    object-fit: cover;
+}
+
+.myform {
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+form input {
+    padding: 10px 40px 10px 5px;
+    margin: 10px;
+    outline-color: #28a745;
+    border: none;
+    width: 100%;
+    height: 40px;
+}
+
+form button {
+    margin: 15px 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* ---------- footer ----- */
+
+footer {
+    display: flex;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 200px;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 5px;
+}
+
+footer .social a:hover {
+    color: #28a745;
+}
+
+/* media query */
+
+@media only screen and (max-width: 700px){
+    #head .flexbox {
+        flex-direction: column;
+    }
+
+    .flexbox ul li a {
+
+        padding: 10px 10px;
+        margin: 0 5px;
+    }
+    
+
+    .about {
+        flex-direction: column;
+    }
+
+    .solutions {
+        flex-direction: column;
+    }
+
+    .solutions > div {
+        width: 100%;
+    }
+
+    .solutions .solution-img {
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+    
+    .image {
+        min-width: 100%;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    #blog .column {
+        flex-direction: column-reverse;
+    }
+
+    .column .mytext {
+        width: 100%;
+    }
+    
+    .column .myimg {
+        width: 100%;
+        font-size: 0;
+        line-height: 0;
+    }
+    
+    .myform {
+        width: 100%;
+    }
+
+}
